@@ -1,6 +1,6 @@
 # Wolfenstein-s-DOOM
 THIS IS A RECREATION OF DOOM, A LEGACY
-# README: *Cyber-Slayer*
+# README
 
 -----
 
