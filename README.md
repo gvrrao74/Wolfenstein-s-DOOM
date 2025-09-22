@@ -60,6 +60,6 @@ I hope you enjoy the game\! Thank you for playing.
 
 ## Credits :
 * **Music**: https://youtu.be/Cl-xcjlfswo
-* **Gameplay testing**: https://app.slack.com/client/T0266FRGM/C091PEQP7CJ
+* **Gameplay testing**: https://summer.hackclub.com/users/23311
 * **executable conversion**: Google Gemini
 * **RayCasting engine, Map layout, Sounds, NPC, and textures**: CoderSpace(YouTube)
