@@ -38,7 +38,8 @@ Equipped with a single, powerful shotgun, you'll navigate a maze of deadly corri
 
 1.  Download the **`wolfenstein_doom.zip`** file from our website or itch.io page.
 2.  Extract the contents of the zip file to a folder of your choice.
-3.  Double-click **`main.exe`** to start the game.
+3.  Navigate to Windows Folder
+4.  Double-click **`main.exe`** to start the game.
 
 ### Mac
 
