@@ -25,6 +25,7 @@ Equipped with a single, powerful shotgun, you'll navigate a maze of deadly corri
   * **Move Forward/Backward**: `W` / `S`
   * **Strafe Left/Right**: `A` / `D`
   * **Fire Weapon**: `Left Mouse Button`
+  * **Restart the game**: `esc from fullscreen and reload the page`
 
 ### Gameplay Tips
 
