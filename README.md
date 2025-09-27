@@ -6,7 +6,7 @@ THIS IS A RECREATION OF DOOM, A LEGACY
 
 ## Game Overview
 
-Welcome to **Wolfenstein's-DOOM**\! This is a fast-paced, retro-style FPS inspired by the classic **Wolfenstein 3D and DOOM raycasting engine**. In this game, you take on the role of an elite cyber-operative tasked with infiltrating a fortress. Your mission: destroy the tyrannical AIs before it can unleash a new era of digital oppression.
+Welcome to **Wolfenstein's-DOOM**\! This is a fast-paced, retro-style FPS inspired by the classic **Wolfenstein 3D and DOOM raycasting engine**. In this game, you take on the role of an elite cyber-operative tasked with infiltrating a fortress. Your mission: destroy the tyrannical AIs before they can unleash a new era of digital oppression.
 
 Equipped with a single, powerful shotgun, you'll navigate a maze of deadly corridors, facing off against an army of menacing robotic guards and hostile automated defenses.
 
@@ -25,23 +25,11 @@ Equipped with a single, powerful shotgun, you'll navigate a maze of deadly corri
   * **Move Forward/Backward**: `W` / `S`
   * **Strafe Left/Right**: `A` / `D`
   * **Fire Weapon**: `Left Mouse Button`
-  * **To exit**: `esc` key or `X` button on the top right corner
 
 ### Gameplay Tips
 
   * **Keep Moving**: Standing still is a recipe for disaster. Keep strafing and turning to avoid enemy fire.
   * **Never Stop Firing**: With unlimited ammo, the best offense is a constant stream of fire.
-
-## Installation and System Requirements
-
-### Windows
-
-1.  Download the **`main.exe`** file from my itch.io page.
-2.  Double-click **`main.exe`** to start the game.
-
-### Mac
-
-I am working on the Mac version of the game. Stay tuned
 
 ### Minimum System Requirements
 
@@ -53,13 +41,12 @@ I am working on the Mac version of the game. Stay tuned
 
 ## Support and Feedback
 
-If you encounter any bugs, have suggestions, or just want to share your high score, you can reach out to me at:
-  * **Slack**: (https://app.slack.com/client/T0266FRGM/dms)
+If you encounter any bugs, have suggestions, or want to share your high score, you can always leave a comment
 
 I hope you enjoy the game\! Thank you for playing.
 
 ## Credits :
 * **Music**: https://youtu.be/Cl-xcjlfswo
 * **Gameplay testing**: https://summer.hackclub.com/users/23311
-* **executable conversion**: Google Gemini
+* **pygbag conversion**: Organisers at DayDream BLR
 * **RayCasting engine, Map layout, Sounds, NPC, and textures**: CoderSpace(YouTube)
