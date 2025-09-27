@@ -49,5 +49,6 @@ I hope you enjoy the game\! Thank you for playing.
 ## Credits :
 * **Music**: https://youtu.be/Cl-xcjlfswo
 * **Gameplay testing**: https://summer.hackclub.com/users/23311
-* **pygbag conversion**: Organisers at DayDream BLR
-* **RayCasting engine, Map layout, Sounds, NPC, and textures**: CoderSpace(YouTube)
+* **pygbag conversion assistance**: Organisers at DayDream BLR
+* **RayCasting engine**: CoderSpace(YouTube)
+* **Textures, Sprites, and the weapon**: Canva(digital designing app)
