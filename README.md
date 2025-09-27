@@ -52,3 +52,6 @@ I hope you enjoy the game\! Thank you for playing.
 * **pygbag conversion assistance**: Organisers at DayDream BLR
 * **RayCasting engine**: CoderSpace(YouTube)
 * **Textures, Sprites, and the weapon**: Canva(digital designing app)
+
+
+In case you download the source code, make sure you extract the resources folder, drag it out along with the scripts
