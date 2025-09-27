@@ -28,10 +28,15 @@ class Player:
 
     def check_game_over(self):
         if self.health < 1:
-            self.game.object_renderer.game_over()
-            pg.display.flip()
-            pg.time.delay(1500)
-            self.game.new_game()
+            # 🔑 FIX: Set state to stop main loop update/draw
+            self.game.game_state = 'game_over'
+            pg.mouse.set_visible(True) 
+            pg.event.set_grab(False)
+            # You can add a single line here if you want to play a sound once:
+            # self.game.sound.play_game_over_sound() 
+            
+            # The old logic (pg.display.flip(), pg.time.delay(), self.game.new_game())
+            # is now completely handled by the state machine and user input to start a new game.
 
     def get_damage(self, damage):
         self.health -= damage
@@ -41,9 +46,10 @@ class Player:
 
     def single_fire_event(self, event):
         if event.type == pg.MOUSEBUTTONDOWN:
-            if event.button == 1 and not self.shot:
-                self.shot = True
+            if event.button == 1 and not self.shot and not self.game.weapon.reloading:
                 self.game.sound.shotgun.play()
+                self.shot = True
+                self.game.weapon.reloading = True
 
     def movement(self):
         sin_a = math.sin(self.angle)
@@ -54,28 +60,31 @@ class Player:
         speed_cos = speed * cos_a
 
         keys = pg.key.get_pressed()
+        num_key_pressed = -1
         if keys[pg.K_w]:
+            num_key_pressed += 1
             dx += speed_cos
             dy += speed_sin
         if keys[pg.K_s]:
+            num_key_pressed += 1
             dx += -speed_cos
             dy += -speed_sin
         if keys[pg.K_a]:
+            num_key_pressed += 1
             dx += speed_sin
             dy += -speed_cos
         if keys[pg.K_d]:
+            num_key_pressed += 1
             dx += -speed_sin
             dy += speed_cos
 
-        if dx and dy:
+        # diag move correction
+        if num_key_pressed:
             dx *= self.diag_move_corr
             dy *= self.diag_move_corr
 
         self.check_wall_collision(dx, dy)
 
-        self.angle += self.game.player.rel * self.game.mouse_control.mouse_sens
-
-        # self.mouse_control()
         # if keys[pg.K_LEFT]:
         #     self.angle -= PLAYER_ROT_SPEED * self.game.delta_time
         # if keys[pg.K_RIGHT]:
@@ -104,6 +113,7 @@ class Player:
             pg.mouse.set_pos([HALF_WIDTH, HALF_HEIGHT])
         self.rel = pg.mouse.get_rel()[0]
         self.rel = max(-MOUSE_MAX_REL, min(MOUSE_MAX_REL, self.rel))
+        self.angle += self.rel * MOUSE_SENSITIVITY * self.game.delta_time
 
     def update(self):
         self.movement()

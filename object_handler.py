@@ -31,17 +31,20 @@ class ObjectHandler:
         add_sprite(AnimatedSprite(game, pos=(7.5, 2.5)))
         add_sprite(AnimatedSprite(game, pos=(7.5, 5.5)))
         add_sprite(AnimatedSprite(game, pos=(14.5, 1.5)))
-        add_sprite(AnimatedSprite(game, pos=(14.5, 7.5)))
-        add_sprite(AnimatedSprite(game, pos=(9.5, 7.5)))
-        add_sprite(StaticSprite(game, pos=(4.5, 7.5), scale=0.8, shift=0.18))
-        add_sprite(StaticSprite(game, pos=(2.5, 2.5), scale=0.8, shift=0.18))
-        add_sprite(StaticSprite(game, pos=(8.5, 6.5), scale=0.8, shift=0.18))
-        add_sprite(StaticSprite(game, pos=(13.5, 6.5), scale=0.8, shift=0.18))
-        add_sprite(StaticSprite(game, pos=(14.5, 12.5), scale=0.8, shift=0.18))
-        add_sprite(StaticSprite(game, pos=(1.5, 12.5), scale=0.8, shift=0.18))
-        add_sprite(StaticSprite(game, pos=(5.5, 12.5), scale=0.8, shift=0.18))
-        add_sprite(StaticSprite(game, pos=(9.5, 12.5), scale=0.8, shift=0.18))
-        add_sprite(StaticSprite(game, pos=(11.5, 12.5), scale=0.8, shift=0.18))
+        add_sprite(AnimatedSprite(game, pos=(14.5, 4.5)))
+        add_sprite(AnimatedSprite(game, path=self.anim_sprite_path + 'red_light/0.png', pos=(14.5, 5.5)))
+        add_sprite(AnimatedSprite(game, path=self.anim_sprite_path + 'red_light/0.png', pos=(14.5, 7.5)))
+        add_sprite(AnimatedSprite(game, path=self.anim_sprite_path + 'red_light/0.png', pos=(12.5, 7.5)))
+        add_sprite(AnimatedSprite(game, path=self.anim_sprite_path + 'red_light/0.png', pos=(9.5, 7.5)))
+        add_sprite(AnimatedSprite(game, path=self.anim_sprite_path + 'red_light/0.png', pos=(14.5, 12.5)))
+        add_sprite(AnimatedSprite(game, path=self.anim_sprite_path + 'red_light/0.png', pos=(9.5, 20.5)))
+        add_sprite(AnimatedSprite(game, path=self.anim_sprite_path + 'red_light/0.png', pos=(10.5, 20.5)))
+        add_sprite(AnimatedSprite(game, path=self.anim_sprite_path + 'red_light/0.png', pos=(3.5, 14.5)))
+        add_sprite(AnimatedSprite(game, path=self.anim_sprite_path + 'red_light/0.png', pos=(3.5, 18.5)))
+        add_sprite(AnimatedSprite(game, pos=(14.5, 24.5)))
+        add_sprite(AnimatedSprite(game, pos=(14.5, 30.5)))
+        add_sprite(AnimatedSprite(game, pos=(1.5, 30.5)))
+        add_sprite(AnimatedSprite(game, pos=(1.5, 24.5)))
 
         # npc map
         # add_npc(SoldierNPC(game, pos=(11.0, 19.0)))
@@ -79,3 +82,11 @@ class ObjectHandler:
 
     def add_sprite(self, sprite):
         self.sprite_list.append(sprite)
+
+    def check_win(self):
+        # This checks if the list of living NPCs is empty
+        if not len(self.npc_list): 
+            # 🔑 FIX: Set state to stop main loop update/draw
+            self.game.game_state = 'win'
+            pg.mouse.set_visible(True)
+            pg.event.set_grab(False)

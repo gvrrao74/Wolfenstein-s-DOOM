@@ -1,4 +1,3 @@
-
 from sprite_object import *
 from random import randint, random
 
@@ -209,6 +208,13 @@ class CyberDemonNPC(NPC):
         self.attack_damage = 15
         self.speed = 0.055
         self.accuracy = 0.25
+
+
+
+
+
+
+
 
 
 
