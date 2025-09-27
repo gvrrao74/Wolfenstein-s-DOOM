@@ -8,7 +8,7 @@ THIS IS A COMBINED GAME OF WOLFENSTEIN AND DOOM, A LEGACY AND A SMALL RECREATION
 
 Welcome to **Wolfenstein's-DOOM**\! This is a fast-paced, retro-style FPS inspired by the classic **Wolfenstein 3D and DOOM raycasting engine**. In this game, you take on the role of an elite cyber-operative tasked with infiltrating a fortress. Your mission: destroy the tyrannical AIs before they can unleash a new era of digital oppression.
 
-Equipped with a single, powerful shotgun, you'll navigate a maze of deadly corridors, facing off against an army of menacing robotic guards and hostile automated defenses.
+Equipped with a single, powerful shotgun, you'll navigate a maze of deadly corridors, facing off against an army of menacing robotic guards.
 
 ## Features
 
