@@ -18,6 +18,9 @@ Equipped with a single, powerful shotgun, you'll navigate a maze of deadly corri
   * **Focused Arsenal**: Master a single, powerful weapon that's effective against all enemy types.
   * **Retro Sound Design**: Enjoy a chiptune soundtrack and satisfying retro sound effects.
 
+## Theme : 
+  * **Sacrifices must be made**: Player's health is sacrificed in order to eliminate the enemies
+
 ## How to Play
 
 ### Controls
@@ -31,6 +34,9 @@ Equipped with a single, powerful shotgun, you'll navigate a maze of deadly corri
 
   * **Keep Moving**: Standing still is a recipe for disaster. Keep strafing and turning to avoid enemy fire.
   * **Never Stop Firing**: With unlimited ammo, the best offense is a constant stream of fire.
+
+### Upgrade ?
+  * You can play in the web. But if you want higher quality, increased FPS, and better everything, feel free to download the executable file
 
 ### Minimum System Requirements
 
@@ -50,8 +56,9 @@ I hope you enjoy the game\! Thank you for playing.
 * **Music**: https://youtu.be/Cl-xcjlfswo
 * **Gameplay testing**: https://summer.hackclub.com/users/23311
 * **pygbag conversion assistance**: Organisers at DayDream BLR
+* **Python to exe**: auto-py-to-exe package
 * **RayCasting engine**: CoderSpace(YouTube)
 * **Textures, Sprites, and the weapon**: Canva(digital designing app)
 
 
-In case you download the source code, make sure you extract the resources folder, drag it out along with the scripts
+In case you download the source code, make sure you extract the resources folder, drag it out along with the scripts : the resources folder should be with the  main.py directory
