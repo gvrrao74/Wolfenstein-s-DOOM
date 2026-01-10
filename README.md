@@ -53,8 +53,7 @@ If you encounter any bugs, have suggestions, or want to share your high score, y
 I hope you enjoy the game\! Thank you for playing.
 
 ## Credits :
-* **Music**: https://youtu.be/Cl-xcjlfswo ; https://youtu.be/QHRuTYtSbJQ ; https://youtu.be/ekY09M48Jvs ; https://youtu.be/zZMg9ryeWOw
-* **Gameplay testing**: https://summer.hackclub.com/users/23311
+* **Music**: https://youtu.be/dn0T3s8SMQ8 ; Upcoming musics : https://youtu.be/QHRuTYtSbJQ ; https://youtu.be/ekY09M48Jvs ; https://youtu.be/zZMg9ryeWOw
 * **pygbag conversion assistance**: Organisers at DayDream BLR
 * **Python to exe**: auto-py-to-exe package
 * **RayCasting engine**: CoderSpace(YouTube)
