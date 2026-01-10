@@ -28,15 +28,10 @@ class Player:
 
     def check_game_over(self):
         if self.health < 1:
-            # 🔑 FIX: Set state to stop main loop update/draw
-            self.game.game_state = 'game_over'
-            pg.mouse.set_visible(True) 
-            pg.event.set_grab(False)
-            # You can add a single line here if you want to play a sound once:
-            # self.game.sound.play_game_over_sound() 
-            
-            # The old logic (pg.display.flip(), pg.time.delay(), self.game.new_game())
-            # is now completely handled by the state machine and user input to start a new game.
+            self.game.object_renderer.game_over()
+            pg.display.flip()
+            pg.time.delay(1500)
+            self.game.new_game()
 
     def get_damage(self, damage):
         self.health -= damage
