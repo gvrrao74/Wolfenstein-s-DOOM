@@ -1,7 +1,11 @@
 import math
 
 # game settings
+<<<<<<< HEAD
 RES = WIDTH, HEIGHT = 1200, 675
+=======
+RES = WIDTH, HEIGHT = 1600, 900
+>>>>>>> 89b09d8ff46bd12c52e2b9ff18e70ceef9074d74
 # RES = WIDTH, HEIGHT = 1920, 1080
 HALF_WIDTH = WIDTH // 2
 HALF_HEIGHT = HEIGHT // 2

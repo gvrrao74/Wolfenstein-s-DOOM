@@ -2,7 +2,11 @@ import pygame as pg
 from settings import *
 import os
 from collections import deque
+<<<<<<< HEAD
 from resource_manager import resource_path
+=======
+
+>>>>>>> 89b09d8ff46bd12c52e2b9ff18e70ceef9074d74
 
 class SpriteObject:
     def __init__(self, game, path='resources/sprites/static_sprites/candlebra.png',
@@ -10,7 +14,11 @@ class SpriteObject:
         self.game = game
         self.player = game.player
         self.x, self.y = pos
+<<<<<<< HEAD
         self.image = pg.image.load(resource_path(path)).convert_alpha()
+=======
+        self.image = pg.image.load(path).convert_alpha()
+>>>>>>> 89b09d8ff46bd12c52e2b9ff18e70ceef9074d74
         self.IMAGE_WIDTH = self.image.get_width()
         self.IMAGE_HALF_WIDTH = self.image.get_width() // 2
         self.IMAGE_RATIO = self.IMAGE_WIDTH / self.image.get_height()
@@ -82,9 +90,15 @@ class AnimatedSprite(SpriteObject):
 
     def get_images(self, path):
         images = deque()
+<<<<<<< HEAD
         resolved_path = resource_path(path) 
         for file_name in os.listdir(resolved_path):
             if os.path.isfile(os.path.join(resolved_path, file_name)):
                 img = pg.image.load(os.path.join(resolved_path, file_name)).convert_alpha()
+=======
+        for file_name in os.listdir(path):
+            if os.path.isfile(os.path.join(path, file_name)):
+                img = pg.image.load(path + '/' + file_name).convert_alpha()
+>>>>>>> 89b09d8ff46bd12c52e2b9ff18e70ceef9074d74
                 images.append(img)
         return images

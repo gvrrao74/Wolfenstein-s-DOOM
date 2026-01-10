@@ -10,7 +10,10 @@ from object_handler import *
 from weapon import *
 from sound import *
 from pathfinding import *
+<<<<<<< HEAD
 from resource_manager import resource_path
+=======
+>>>>>>> 89b09d8ff46bd12c52e2b9ff18e70ceef9074d74
 
 
 class Game:

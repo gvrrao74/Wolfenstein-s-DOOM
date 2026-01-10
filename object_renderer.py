@@ -1,6 +1,9 @@
 import pygame as pg
 from settings import *
+<<<<<<< HEAD
 from resource_manager import resource_path
+=======
+>>>>>>> 89b09d8ff46bd12c52e2b9ff18e70ceef9074d74
 
 
 class ObjectRenderer:
@@ -8,6 +11,7 @@ class ObjectRenderer:
         self.game = game
         self.screen = game.screen
         self.wall_textures = self.load_wall_textures()
+<<<<<<< HEAD
         self.sky_image = self.get_texture(resource_path('resources/textures/sky.png'), (WIDTH, HALF_HEIGHT))
         self.sky_offset = 0
         self.blood_screen = self.get_texture(resource_path('resources/textures/blood_screen.png'), RES)
@@ -17,6 +21,18 @@ class ObjectRenderer:
         self.digits = dict(zip(map(str, range(11)), self.digit_images))
         self.game_over_image = self.get_texture(resource_path('resources/textures/game_over.png'), RES)
         self.win_image = self.get_texture(resource_path('resources/textures/win.png'), RES)
+=======
+        self.sky_image = self.get_texture('resources/textures/sky.png', (WIDTH, HALF_HEIGHT))
+        self.sky_offset = 0
+        self.blood_screen = self.get_texture('resources/textures/blood_screen.png', RES)
+        self.digit_size = 90
+        self.digit_images = [self.get_texture(f'resources/textures/digits/{i}.png', [self.digit_size] * 2)
+                             for i in range(11)]
+        self.digits = dict(zip(map(str, range(11)), self.digit_images))
+        self.game_over_image = self.get_texture('resources/textures/game_over.png', RES)
+        self.win_image = self.get_texture('resources/textures/win.png', RES)
+
+>>>>>>> 89b09d8ff46bd12c52e2b9ff18e70ceef9074d74
     def draw(self):
         self.draw_background()
         self.render_game_objects()
@@ -56,9 +72,17 @@ class ObjectRenderer:
 
     def load_wall_textures(self):
         return {
+<<<<<<< HEAD
             1: self.get_texture(resource_path('resources/textures/1.png')),
             2: self.get_texture(resource_path('resources/textures/2.png')),
             3: self.get_texture(resource_path('resources/textures/3.png')),
             4: self.get_texture(resource_path('resources/textures/4.png')),
             5: self.get_texture(resource_path('resources/textures/5.png')),
+=======
+            1: self.get_texture('resources/textures/1.png'),
+            2: self.get_texture('resources/textures/2.png'),
+            3: self.get_texture('resources/textures/3.png'),
+            4: self.get_texture('resources/textures/4.png'),
+            5: self.get_texture('resources/textures/5.png'),
+>>>>>>> 89b09d8ff46bd12c52e2b9ff18e70ceef9074d74
         }

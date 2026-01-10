@@ -1,7 +1,10 @@
 from sprite_object import *
 from npc import *
 from random import choices, randrange
+<<<<<<< HEAD
 from resource_manager import resource_path
+=======
+>>>>>>> 89b09d8ff46bd12c52e2b9ff18e70ceef9074d74
 
 
 class ObjectHandler:
