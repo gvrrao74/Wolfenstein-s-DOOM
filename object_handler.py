@@ -1,6 +1,7 @@
 from sprite_object import *
 from npc import *
 from random import choices, randrange
+from resource_manager import resource_path
 
 
 class ObjectHandler:
@@ -82,11 +83,3 @@ class ObjectHandler:
 
     def add_sprite(self, sprite):
         self.sprite_list.append(sprite)
-
-    def check_win(self):
-        # This checks if the list of living NPCs is empty
-        if not len(self.npc_list): 
-            # 🔑 FIX: Set state to stop main loop update/draw
-            self.game.game_state = 'win'
-            pg.mouse.set_visible(True)
-            pg.event.set_grab(False)
