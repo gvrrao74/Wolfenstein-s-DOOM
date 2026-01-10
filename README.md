@@ -32,8 +32,8 @@ Equipped with a single, powerful shotgun, you'll navigate a maze of deadly corri
   * **Keep Moving**: Standing still is a recipe for disaster. Keep strafing and turning to avoid enemy fire.
   * **Never Stop Firing**: With unlimited ammo, the best offense is a constant stream of fire.
 
-### Upgrade ?
-  * You can play in the web. But if you want higher quality, increased FPS, and better everything, feel free to download the executable file
+### Updates
+  * Wait for the upcoming updates regularly at Itch.io
 
 ### Minimum System Requirements
 
