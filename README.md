@@ -18,9 +18,6 @@ Equipped with a single, powerful shotgun, you'll navigate a maze of deadly corri
   * **Focused Arsenal**: Master a single, powerful weapon that's effective against all enemy types.
   * **Retro Sound Design**: Enjoy a chiptune soundtrack and satisfying retro sound effects.
 
-## Theme : 
-  * **Sacrifices must be made**: Player's health is sacrificed in order to eliminate the enemies
-
 ## How to Play
 
 ### Controls
