@@ -1,12 +1,12 @@
-# Wolfenstein-s-DOOM
-THIS IS A COMBINED GAME OF WOLFENSTEIN AND DOOM, A LEGACY AND A SMALL RECREATION (TRIAL)
+# DOOM
+THIS IS DOOM, A LEGACY AND A SMALL RECREATION (TRIAL)
 # README
 
 -----
 
 ## Game Overview
 
-Welcome to **Wolfenstein's-DOOM**\! This is a fast-paced, retro-style FPS inspired by the classic **Wolfenstein 3D and DOOM raycasting engine**. In this game, you take on the role of an elite cyber-operative tasked with infiltrating a fortress. Your mission: destroy the tyrannical AIs before they can unleash a new era of digital oppression.
+Welcome to **DOOM**\! This is a fast-paced, retro-style FPS inspired by the classic **Wolfenstein 3D and DOOM raycasting engine**. In this game, you take on the role of an elite cyber-operative tasked with infiltrating a fortress. Your mission: destroy the tyrannical AIs before they can unleash a new era of digital oppression.
 
 Equipped with a single, powerful shotgun, you'll navigate a maze of deadly corridors, facing off against an army of menacing robotic guards.
 
@@ -54,10 +54,8 @@ I hope you enjoy the game\! Thank you for playing.
 
 ## Credits :
 * **Music**: https://youtu.be/dn0T3s8SMQ8 ; Upcoming musics : https://youtu.be/QHRuTYtSbJQ ; https://youtu.be/ekY09M48Jvs ; https://youtu.be/zZMg9ryeWOw
-* **pygbag conversion assistance**: Organisers at DayDream BLR
-* **Python to exe**: auto-py-to-exe package
-* **RayCasting engine**: CoderSpace(YouTube)
+* **Python to exe**: auto-py-to-exe
+* **RayCasting engine**: Artificial Intelligence (Google Gemini)
 * **Textures, Sprites, and the weapon**: Canva(digital designing app)
 
-
-In case you download the source code, make sure you extract the resources folder, drag it out along with the scripts : the resources folder should be with the  main.py directory
+-------------------------------------------------------**Enjoy**--------------------------------------------------------------
